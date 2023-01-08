@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="text-center my-10">
+        <h1 class="text-5xl font-semibold">Let's get some <span class="text-amber-300">MONEYYYYYYYY</span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-8 w-3/4 mx-auto">
+                <div class="bg-lime-400 rounded-lg py-10 px-5">
+                    <h1 class="text-white text-xl">Deposit</h1>
+                    <p class="text-white text-5xl">$<span id="deposit-previous">00</span></p>
+                </div>
+                <div class="bg-yellow-400 rounded-lg py-10 px-5">
+                    <h1 class="text-white text-xl">Widraw</h1>
+                    <p class="text-white text-5xl">$<span id="widraw-previous">00</span></p>
+                </div>
+                <div class="bg-purple-400 rounded-lg py-10 px-5">
+                    <h1 class="text-white text-xl">Balance</h1>
+                    <p class="text-white text-5xl">$<span id="balance-field">1240</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-8 w-3/4 mx-auto">
+                <div class="bg-lime-400 rounded-lg py-16 px-5">
+                    <h1 class="text-white text-2xl">Please Deposit</h1>
+                    <input class="block my-3 w-3/4 rounded p-2" type="text" placeholder="$amount you want to deposit" id="deposit-field">
+                    <button class="bg-red-600 text-white font-semibold rounded py-1 px-7 hover:bg-sky-500" type="submit" id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-yellow-400 rounded-lg py-16 px-5">
+                    <h1 class="text-white text-2xl">Please Widraw</h1>
+                    <input class="block my-3 w-3/4 rounded p-2" type="text" placeholder="$amount you want to widraw" id="widraw-field">
+                    <button class="bg-red-600 text-white font-semibold rounded py-1 px-7 hover:bg-sky-500" type="submit" id="btn-widraw">Widraw</button>
+                </div>
+            </div>
+        </section>
+        <script src="bank.js"></script>
+    </main>
+</body>
+
+</html>
